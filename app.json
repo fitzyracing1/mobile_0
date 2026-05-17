@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "NFC Coder",
+    "slug": "nfc-coder-solver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "coder-nfc",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a1a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nfccoder.app",
+      "infoPlist": {
+        "NFCReaderUsageDescription": "NFC tags are used to detect your coding problem type and find targeted solutions."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a1a"
+      },
+      "package": "com.nfccoder.app",
+      "permissions": ["android.permission.NFC"]
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "NFC tags are used to detect your coding problem type and find targeted solutions.",
+          "selectIdentifiers": [],
+          "systemCodes": []
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
