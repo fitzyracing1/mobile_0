@@ -25,7 +25,9 @@
         "backgroundColor": "#0a0a1a"
       },
       "package": "com.nfccoder.app",
-      "permissions": ["android.permission.NFC"]
+      "permissions": [
+        "android.permission.NFC"
+      ]
     },
     "plugins": [
       [
@@ -35,7 +37,8 @@
           "selectIdentifiers": [],
           "systemCodes": []
         }
-      ]
+      ],
+      "expo-font"
     ],
     "extra": {
       "eas": {
